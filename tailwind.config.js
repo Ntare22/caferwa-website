@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'coffee': '#654629'
+        'coffee': '#654629',
+        'light-coffee': '#BFA165'
       }
     },
   },
