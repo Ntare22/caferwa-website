@@ -5,7 +5,7 @@ import Head from 'next/head';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import profilePic from '../assets/card-pic.jpeg'
+import profilePic from '../assets/card-pic.jpeg';
 
 const Team: NextPage = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -114,7 +114,7 @@ const Team: NextPage = () => {
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 py-4'>{team.map(person => 
           <div key={person.name} className='border-2 border-black'>
             <div>
-              <Image src={profilePic} height='420' width='420' />
+              <Image src={profilePic} height='420' width='420' alt='profile picture' />
             </div>
             <div className='px-4 py-3'>
               <h2 className='font-bold text-2xl'>{person.name}</h2>

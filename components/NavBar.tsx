@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 import logo from '../assets/caferwa-logo.svg';
 
 const NavBar = () => {
@@ -19,26 +20,36 @@ const NavBar = () => {
     <div className='flex items-center justify-between lg:px-36 sticky top-0 bg-white z-50 drop-shadow-md'>
       <Image alt='caferwa logo' src={logo} width='60' height='60' />
       <div className='hidden lg:flex uppercase sm:text-xs md:text-sm font-bold w-1/2 justify-between items-center'>
-        <a href='/' className='underline underline-offset-8 decoration-2 decoration-coffee'>
-          Home
-        </a>
-        <a href='/about' className='underline underline-offset-8 decoration-2 decoration-coffee'>
-          About Us
-        </a>
-        <a href='/products' className='underline underline-offset-8 decoration-2 decoration-coffee'>
-          Products
-        </a>
-        <a href='/team'className='underline underline-offset-8 decoration-2 decoration-coffee'>
-          Team
-        </a>
-        <a href='/contact' className='underline underline-offset-8 decoration-2 decoration-coffee'>
-          Contact Us
-        </a>
-        <a href='#'>
+        <Link href='/'>
+          <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+            Home
+          </a>
+        </Link>
+        <Link href='/about'>
+          <a  className='underline underline-offset-8 decoration-2 decoration-coffee'>
+            About Us
+          </a>
+        </Link>
+        <Link href='/products'>
+          <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+            Products
+          </a>
+        </Link>
+        <Link href='/team'>
+          <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+            Team
+          </a>
+        </Link>
+        <Link href='/contact' >
+          <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+            Contact Us
+          </a>
+        </Link>
+        <Link href='#'>
           <button className='uppercase bg-coffee w-24 p-2 text-white'>
             Try Now
           </button>
-        </a>
+        </Link>
       </div>
       <div className='lg:hidden'>
         <div className='p-3' onClick={openMenu}>
@@ -72,10 +83,10 @@ const NavBar = () => {
           </svg>
         </div>
         <div className='uppercase flex flex-col underline underline-offset-8 decoration-2 bg-white pb-4 z-50'>
-          <a href='/' className='decoration-coffee'>Home</a>
-          <a href='/about' className='mt-4 decoration-coffee'>About</a>
-          <a href='/products' className='mt-4 decoration-coffee'>Products</a>
-          <a href='/contact' className='mt-4 decoration-coffee'>Contact Us</a>
+          <Link href='/'><span className='decoration-coffee'>Home</span></Link>
+          <Link href='/about'><span className='mt-4 decoration-coffee'>About</span></Link>
+          <Link href='/products'><span className='mt-4 decoration-coffee'>Products</span></Link>
+          <Link href='/contact'><span className='mt-4 decoration-coffee'>Contact Us</span></Link>
         </div>
       </div>
     </div>
