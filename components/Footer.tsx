@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className='mx-auto w-1/2' />
-      <p className='text-center text-xs font-bold py-5'>Rwanda's Finest Coffee. &copy; 2022 Caferwa, All rights reserved.</p>
+      <p className='text-center text-xs font-bold py-5'>Rwanda&apos;s Finest Coffee. &copy;2022 Caferwa, All rights reserved.</p>
     </div>
   )
 }

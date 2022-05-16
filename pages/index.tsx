@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             <button className='bg-coffee px-4 py-2 text-white uppercase font-bold mt-4'>Try Now</button>
           </div>
           <div className='absolute lg:ml-96'>
-            <Image src={mainImg} className='-z-10' />
+            <Image src={mainImg} className='-z-10' alt='main image' />
           </div>
         </div>
         {/* <div className='bg-gray-500 flex justify-center -z-10'>
@@ -54,12 +54,12 @@ const Home: NextPage = () => {
         <div className='flex justify-center py-6 items-center bg-light-coffee'>
           <div className='hidden lg:flex'>
             <div className='bg-white h-80'>
-              <Image src={cardImg} width='250' height='250' />
+              <Image src={cardImg} width='250' height='250' alt='process image 1' />
               <h1 className='font-bold uppercase'>Process 1</h1>
               <p>some text here</p>
             </div>
             <div className='bg-white h-80 mt-12 ml-5'>
-              <Image src={cardImg} width='250' height='250' />
+              <Image src={cardImg} width='250' height='250' alt='process image 2' />
               <h1 className='font-bold uppercase'>Process 2</h1>
               <p>some text here</p>
             </div>
@@ -86,14 +86,14 @@ const Home: NextPage = () => {
           <div>
             <h1 className='text-center text-3xl font-bold mt-6'>Our Partners</h1>
             <div className='py-3 mt-3 flex flex-col items-center lg:flex-row justify-evenly lg:mx-96'>
-              <a href='https://sfbaycoffee.com/' target='_blank'>
-                <Image src={sfbaycoffee} height="60" width='120' />
+              <a href='https://sfbaycoffee.com/' target='_blank' rel="noreferrer">
+                <Image src={sfbaycoffee} height="60" width='120' alt='partner logo 1' />
               </a>
-              <a href='https://www.olamgroup.com/' target='_blank'>
-                <Image src={olam} height="60" width='180' />
+              <a href='https://www.olamgroup.com/' target='_blank' rel="noreferrer">
+                <Image src={olam} height="60" width='180' alt='partner logo 2' />
               </a>
-              <a href='https://counterculturecoffee.com/' target='_blank'>
-                <Image src={cccoffee} height="60" width='60' />
+              <a href='https://counterculturecoffee.com/' target='_blank' rel="noreferrer">
+                <Image src={cccoffee} height="60" width='60' alt='partner logo 3' />
               </a>
             </div>
           </div>
