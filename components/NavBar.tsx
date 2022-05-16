@@ -16,30 +16,35 @@ const NavBar = () => {
   
 
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-between lg:px-36 sticky top-0 bg-white z-50 drop-shadow-md'>
       <Image alt='caferwa logo' src={logo} width='60' height='60' />
-      <ul className='hidden lg:flex uppercase sm:text-xs md:text-sm font-bold w-1/2 justify-between items-center'>
-        <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+      <div className='hidden lg:flex uppercase sm:text-xs md:text-sm font-bold w-1/2 justify-between items-center'>
+        <a href='/' className='underline underline-offset-8 decoration-2 decoration-coffee'>
           Home
         </a>
-        <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+        <a href='/about' className='underline underline-offset-8 decoration-2 decoration-coffee'>
           About Us
         </a>
-        <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+        <a href='/products' className='underline underline-offset-8 decoration-2 decoration-coffee'>
           Products
         </a>
-        <a className='underline underline-offset-8 decoration-2 decoration-coffee'>
+        <a href='/team'className='underline underline-offset-8 decoration-2 decoration-coffee'>
+          Team
+        </a>
+        <a href='/contact' className='underline underline-offset-8 decoration-2 decoration-coffee'>
           Contact Us
         </a>
-        <button className='uppercase bg-coffee w-24 p-2 text-white'>
-          Try Now
-        </button>
-      </ul>
+        <a href='#'>
+          <button className='uppercase bg-coffee w-24 p-2 text-white'>
+            Try Now
+          </button>
+        </a>
+      </div>
       <div className='lg:hidden'>
         <div className='p-3' onClick={openMenu}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='h-6 w-6'
+            className='h-9 w-9'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'
@@ -66,11 +71,11 @@ const NavBar = () => {
             />
           </svg>
         </div>
-        <div className='uppercase flex flex-col underline underline-offset-8 decoration-2 bg-white pb-4'>
-          <a className='decoration-coffee'>Home</a>
-          <a className='mt-4 decoration-coffee'>About</a>
-          <a className='mt-4 decoration-coffee'>Products</a>
-          <a className='mt-4 decoration-coffee'>Contact Us</a>
+        <div className='uppercase flex flex-col underline underline-offset-8 decoration-2 bg-white pb-4 z-50'>
+          <a href='/' className='decoration-coffee'>Home</a>
+          <a href='/about' className='mt-4 decoration-coffee'>About</a>
+          <a href='/products' className='mt-4 decoration-coffee'>Products</a>
+          <a href='/contact' className='mt-4 decoration-coffee'>Contact Us</a>
         </div>
       </div>
     </div>
