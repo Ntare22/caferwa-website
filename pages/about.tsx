@@ -28,7 +28,7 @@ const About: NextPage = () => {
       <main>
         <NavBar />
         <div className='lg:mx-64'>
-          this is the about page
+          this is the about page it has been adjusted
         </div>
         <Footer />
       </main>
